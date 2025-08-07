@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XSS</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('bg3.gif') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      font-family: 'Arial', sans-serif;
+      color: rgb(255, 0, 0);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+    }
+
+    h1,
+    h2,
+    h4,
+    h3 {
+      margin: 10px;
+      text-align: center;
+      color: rgb(247, 0, 255);
+    }
+
+    #nameList {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 20px;
+      animation: slideIn 1.2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translate(-100%, -50%);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translate(0, -50%);
+        opacity: 1;
+      }
+    }
+
+    #nameList ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #nameList li {
+      margin: 10px 0;
+      color: rgb(92, 0, 0);
+      font-weight: bold;
+      font-size: 18px;
+      text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.7);
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nameList">
+    <ul>
+      <li>410 TN</li>
+    </ul>
+  </div>
+
+  <h1>Kasper Karez 3likom</h1>
+  <h2>ارررحححببب<h2>
+      <h3>Kalem Dev Jdid Iraka7lk El Exploits</h3>
+      <h4>
+        Kasper I7ebkkkk<br>
+        Serverkom Bokh barcha (ki zby)
+      </h4>
+      <audio src="player.mp3" autoplay loop></audio>
+</body>
+
+</html>
